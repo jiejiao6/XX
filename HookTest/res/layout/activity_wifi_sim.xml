@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_bar" />
+
+    <TextView
+        android:id="@+id/tv_wifi_set"
+        style="@style/tv_pad_left"
+        android:layout_marginTop="@dimen/fifty"
+        android:text="@string/wifi_tv_wifi_set" />
+
+    <SeekBar
+        android:id="@+id/sb_wifi"
+        style="@style/seek_bar" />
+
+    <TextView
+        android:id="@+id/tv_sim_set"
+        style="@style/tv_pad_left"
+        android:text="@string/wifi_tv_sim_set" />
+
+    <SeekBar
+        android:id="@+id/sb_sim"
+        style="@style/seek_bar" />
+   <TextView 
+       style="@style/tv_tips"
+       android:text="@string/wifi_sim_tips"
+       />
+
+</LinearLayout>

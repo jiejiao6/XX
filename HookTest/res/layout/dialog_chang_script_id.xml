@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/board"
+        android:padding="@dimen/et_margain"
+        android:layout_margin="@dimen/activity_big_padding" >
+
+        <TextView
+            android:id="@+id/script_tc_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/script_tv_script_name" />
+
+        <EditText
+            android:id="@+id/et_script_or_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/script_tc_tips"
+            android:background="@color/white"
+             />
+<!-- android:numeric="integer" -->
+        <TextView
+            android:id="@+id/et_script_suffix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=".lua" />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/common_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_liucun_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_actionbar"
+        android:layout_marginLeft="@dimen/activity_big_padding"
+        android:layout_marginRight="@dimen/activity_big_padding"
+        android:layout_marginTop="@dimen/activity_big_padding"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:singleLine="true"
+            android:text="@string/liucun_set_ed"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/sp_package"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/liucun_recode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_liucun_ed"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_big_padding" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_all_data_num_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_all_data_num" />
+
+            <TextView
+                android:id="@+id/tv_all_data_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_liucun_data_run_num_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_padding"
+                android:text="@string/tv_liucun_data_run_num" />
+
+            <TextView
+                android:id="@+id/tv_liucun_data_run_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_padding"
+                android:text="0" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_liucun_total_num_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_padding"
+                android:text="@string/tv_liucun_total_data" />
+
+            <TextView
+                android:id="@+id/tv_liucun_total_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_padding"
+                android:text="0" />
+        </TableRow>
+    </TableLayout>
+    <!--
+     <ScrollView
+    android:layout_below="@id/tv_liucun_data_run_num"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="#ff0000"
+     >-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liucun_recode"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/activity_big_padding"
+        android:background="@drawable/conner_gray_bg"
+        android:padding="@dimen/tv_padding" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tv_padding"
+                android:text="@string/tv_liucun_title"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_1" />
+
+            <EditText
+                android:id="@+id/et_liucun_1"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey2" />
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_6" />
+
+            <EditText
+                android:id="@+id/et_liucun_6"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_2" />
+
+            <EditText
+                android:id="@+id/et_liucun_2"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey2" />
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_7" />
+
+            <EditText
+                android:id="@+id/et_liucun_7"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_3" />
+
+            <EditText
+                android:id="@+id/et_liucun_3"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey2" />
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_8" />
+
+            <EditText
+                android:id="@+id/et_liucun_8"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_4" />
+
+            <EditText
+                android:id="@+id/et_liucun_4"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey2" />
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_9" />
+
+            <EditText
+                android:id="@+id/et_liucun_9"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                style="@style/tv_weight_1"
+                android:text="@string/tv_liucun_5" />
+
+            <EditText
+                android:id="@+id/et_liucun_5"
+                style="@style/tv_weight_1"
+                android:maxLength="5"
+                android:numeric="decimal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey2" />
+
+            <TextView style="@style/tv_weight_1" />
+
+            <TextView style="@style/tv_weight_1" >
+            </TextView>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                style="@style/tv_weight_1"
+                android:padding="@dimen/tv_padding"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/press_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_ok"
+                style="@style/tv_weight_1"
+                android:padding="@dimen/tv_padding"
+                android:text="@string/btn_ok"
+                android:textColor="@color/press_text" />
+        </TableRow>
+    </TableLayout>
+    <!-- </ScrollView> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_big_padding"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_liucun_export"
+            style="@style/btn_style1"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/btn_liucun_export"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_liucun_remove"
+            style="@style/btn_style1"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/btn_liucun_remove" />
+
+         <Button
+            android:id="@+id/btn_liucun_remove_all"
+            style="@style/btn_style1"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/btn_liucun_remove_all"
+            android:visibility="gone" /> 
+        <Button
+            android:id="@+id/btn_liucun_set_total"
+            style="@style/btn_style1"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="@string/liucun_btn_set_total_count" />
+    </LinearLayout>
+
+</RelativeLayout>

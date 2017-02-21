@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/common_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_liucun"
+            style="@style/btn_style1"
+            android:text="@string/btn_liucun" />
+
+        <Button
+            android:id="@+id/btn_vpn_set"
+            style="@style/btn_style1"
+            android:text="@string/btn_vpn_set" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_script_set"
+            style="@style/btn_style1"
+            android:text="@string/main_btn_set_script" />
+
+        <Button
+            android:id="@+id/btn_chang_white_list"
+            style="@style/btn_style1"
+            android:lines="1"
+            android:text="@string/btn_change_white_list" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_listen_file_opt"
+            style="@style/btn_style1"
+            android:text="@string/btn_listen_file_opt" />
+
+        <Button
+            android:id="@+id/btn_listen_sys_opt"
+            style="@style/btn_style1"
+            android:lines="1"
+            android:text="@string/btn_listen_sys_opt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_main_wifi_sim"
+            style="@style/btn_style1"
+            android:onClick="onClick"
+            android:text="@string/main_btn_wifi_sim" />
+
+        <Button
+            android:id="@+id/btn_uninstall_apk"
+            style="@style/btn_style1"
+            android:text="@string/btn_unInstall_apks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_show_debug_log"
+            style="@style/btn_style1"
+            android:onClick="onClick"
+            android:text="@string/main_btn_show_debug_log" />
+
+        <Button
+            android:id="@+id/btn_show_upload_log"
+            style="@style/btn_style1"
+            android:onClick="onClick"
+            android:text="@string/main_btn_show_upload_log" />
+
+        <!--
+             <Button
+            android:id="@+id/btn_uninstall_apk"
+            style="@style/btn_style1"
+            android:text="@string/btn_unInstall_apks" />
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_show_install_log"
+            style="@style/btn_style1"
+            android:onClick="onClick"
+            android:text="@string/main_btn_installed_log" />
+
+        <Button
+            android:id="@+id/btn_chose_market"
+            style="@style/btn_style1"
+            android:onClick="onClick"
+            android:text="@string/main_btn_chose_market" />
+
+        <!--
+             <Button
+            android:id="@+id/btn_uninstall_apk"
+            style="@style/btn_style1"
+            android:text="@string/btn_unInstall_apks" />
+        -->
+
+    </LinearLayout>
+
+</LinearLayout>

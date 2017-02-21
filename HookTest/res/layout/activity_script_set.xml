@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_big_padding" >
+
+        <RelativeLayout
+            android:id="@+id/rl_script_is_run"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/et_margain" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/script_is_run_script" />
+
+            <CheckBox
+                android:id="@+id/cb_script_is_run_script"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:clickable="false" />
+        </RelativeLayout>
+
+  <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/et_margain" > -->
+
+        <TextView
+            android:id="@+id/tv_script_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/et_margain"
+            android:text="@string/script_cur_script_name" />
+
+      <!--   <TextView
+            android:id="@+id/tv_script_orider_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/script_cur_orider_id" /> -->
+<!--     </LinearLayout> -->
+
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/et_margain" > -->
+
+        <TextView
+            android:id="@+id/tv_script_is_script_exist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/script_cur_script_exixt"
+            android:textColor="@color/red" 
+             android:padding="@dimen/et_margain" />
+
+       <!--  <TextView
+            android:id="@+id/tv_script_is_script_exist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="dd" />
+    </LinearLayout> -->
+
+   <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/board"
+        android:padding="@dimen/et_margain" >
+
+        <TextView
+            android:id="@+id/script_tc_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/script_tv_orider_id" />
+
+        <EditText
+            android:id="@+id/et_script_or_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/script_tc_tips"
+            android:background="@color/white"
+            android:numeric="integer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=".lua" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".lua" />
+    </RelativeLayout> -->
+
+    <Button
+        android:id="@+id/btn_script_change_script_name"
+        style="@style/btn_style_no_margin"
+        android:layout_marginTop="@dimen/activity_big_padding"
+        android:text="@string/script_btn_change_script_name" />
+
+    <Button
+        android:id="@+id/btn_script_choose_sd"
+        style="@style/btn_style_no_margin"
+        android:layout_marginTop="@dimen/activity_big_padding"
+        android:text="@string/script_btn_choose_sd" />
+    
+     <Button
+        android:id="@+id/btn_script_clear_all_script"
+        style="@style/btn_style_no_margin"
+        android:layout_marginTop="@dimen/activity_big_padding"
+        android:text="@string/script_btn_clear_all_script" />
+     <Button
+        android:id="@+id/btn_script_run"
+        style="@style/btn_style_no_margin"
+        android:layout_marginTop="@dimen/activity_big_padding"
+        android:text="@string/script_btn_test_run" />
+     <Button
+        android:id="@+id/btn_script_time"
+        style="@style/btn_style_no_margin"
+        android:layout_marginTop="@dimen/activity_big_padding"
+        android:text="@string/script_btn_script_time" />
+     <ListView
+         android:layout_marginTop="@dimen/activity_big_padding"
+         android:id="@+id/lv_script_allScript"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         />
+
+</LinearLayout>
+
+
+</LinearLayout>

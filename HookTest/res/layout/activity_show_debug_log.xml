@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/common_bar" />
+
+    <ListView
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/files"
+        android:dividerHeight="15dp"
+        android:divider="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+    </ListView>
+
+</LinearLayout>

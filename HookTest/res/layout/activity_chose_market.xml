@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_bar" />
+
+        <TextView
+            android:id="@+id/tv_chose_market_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue02"
+            android:lines="1"
+            android:padding="@dimen/padding_size"
+            android:text="@string/choose_market"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_big_padding" >
+
+            <RelativeLayout
+                android:id="@+id/rl_market_is_run"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/et_margain" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/market_is_run_market"
+                    android:textSize="@dimen/text_size_big" />
+
+                <CheckBox
+                    android:id="@+id/cb_market_is_run_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/et_down_package_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/gray02"
+                    android:hint="@string/market_listen_package_name"
+                    android:padding="10dp" />
+                <!-- android:text="com.huodongjia.girl2048" -->
+
+                <Button
+                    android:id="@+id/btn_down_package_name_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/et_down_package_name"
+                    android:layout_alignTop="@id/et_down_package_name"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/file_record_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/market_ok"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rb_bd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_baidu" />
+
+                <RadioButton
+                    android:id="@+id/rb_360"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_360" />
+
+                <RadioButton
+                    android:id="@+id/rb_yyb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_yyb" />
+
+                <RadioButton
+                    android:id="@+id/rb_wdj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_wdj" />
+
+                <RadioButton
+                    android:id="@+id/rb_pp_assistant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_pp_assistant" />
+
+                <RadioButton
+                    android:id="@+id/rb_az"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_anzhi" />
+
+                <RadioButton
+                    android:id="@+id/rb_mu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_miu" />
+
+                <RadioButton
+                    android:id="@+id/rb_gp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_gp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

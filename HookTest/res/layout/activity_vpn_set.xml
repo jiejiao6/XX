@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_bar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_vpn_auto_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/et_margain"
+            android:paddingLeft="@dimen/activity_big_padding"
+            android:paddingRight="@dimen/activity_big_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/vpn_tv_auto_connect" />
+
+            <CheckBox
+                android:id="@+id/cb_vpn_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/et_margain"
+            android:background="@drawable/board"
+            android:paddingLeft="@dimen/activity_big_padding"
+            android:paddingRight="@dimen/activity_big_padding"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_vpn_re_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/vpn_tv_disconnect_to_connect_time" />
+
+            <EditText
+                android:id="@+id/et_vpn_reconnect_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_vpn_re_tip"
+                android:background="@color/white"
+                android:maxLength="2"
+                android:numeric="integer"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/et_margain"
+            android:background="@drawable/board"
+            android:paddingLeft="@dimen/activity_big_padding"
+            android:paddingRight="@dimen/activity_big_padding" >
+
+            <TextView
+                android:id="@+id/tv_vpn_c_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/vpn_tv_connect_time" />
+
+            <EditText
+                android:id="@+id/et_vpn_connect_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_vpn_c_tip"
+                android:background="@color/white"
+                android:maxLength="2"
+                android:numeric="integer"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/et_margain"
+            android:background="@drawable/board"
+            android:paddingLeft="@dimen/activity_big_padding"
+            android:paddingRight="@dimen/activity_big_padding" >
+
+            <TextView
+                android:id="@+id/tv_vpn_server_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/vpn_tv_server_add" />
+
+            <EditText
+                android:id="@+id/et_vpn_server_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_vpn_server_add"
+                android:background="@color/white"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/et_margain"
+            android:background="@drawable/board"
+            android:paddingLeft="@dimen/activity_big_padding"
+            android:paddingRight="@dimen/activity_big_padding" >
+
+            <TextView
+                android:id="@+id/tv_vpn_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/vpn_tv_user_name" />
+
+            <EditText
+                android:id="@+id/et_vpn_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_vpn_username"
+                android:background="@color/white"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/et_margain"
+            android:background="@drawable/board"
+            android:paddingLeft="@dimen/activity_big_padding"
+            android:paddingRight="@dimen/activity_big_padding" >
+
+            <TextView
+                android:id="@+id/tv_vpn_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/vpn_tv_password" />
+
+            <EditText
+                android:id="@+id/et_vpn_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_vpn_password"
+                android:background="@color/white"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_vpn_save"
+                style="@style/btn_style1"
+                android:text="@string/vpn_btn_save" />
+
+            <Button
+                android:id="@+id/btn_vpn_delete_vpn"
+                style="@style/btn_style1"
+                android:text="@string/vpn_btn_delete_vpn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_vpn_add_vpn"
+                style="@style/btn_style1"
+                android:text="@string/vpn_btn_add_vpn" />
+
+            <Button
+                android:id="@+id/btn_vpn_change_vpn"
+                style="@style/btn_style1"
+                android:text="@string/vpn_btn_change_vpn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_vpn_connect_vpn"
+                style="@style/btn_style1"
+                android:text="@string/vpn_btn_connect_vpn" />
+
+            <Button
+                android:id="@+id/btn_vpn_disconnect_vpn"
+                style="@style/btn_style1"
+                android:text="@string/vpn_btn_disconnect_vpn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

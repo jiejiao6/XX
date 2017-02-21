@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/yellow2"
+        android:gravity="center_vertical"
+        android:layout_below="@id/common_actionbar"
+        >
+        <ImageView 
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/listen"
+            android:padding="@dimen/icon_padding"
+            />
+        <ImageView 
+            android:id="@+id/iv_listen_icon"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/ic_launcher"
+            android:padding="@dimen/icon_padding"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/tv_listen_apk_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1"
+                android:textSize="@dimen/text_size_bigger"
+                android:text="ddaf"/>
+            <TextView 
+                android:id="@+id/tv_listen_package"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/green01"
+                android:text="ddaf"/>
+        </LinearLayout>
+
+</LinearLayout>
